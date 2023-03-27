@@ -20,6 +20,9 @@
   --highlight-background-color: #ccc;
   --text-color: #202020;
   --text-color-light: #ebebeb;
+  --heading-highlight-color: #ffea00;
+  --overlay-text-color: var(--text-color);
+  --highlight-text-color: var(--text-color);
 
   /* fonts */
   --body-font-family: 'Source Sans Pro', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -67,7 +70,7 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  height: calc(var(--nav-height) + 25px);
 }
 
 main {
@@ -108,7 +111,7 @@ body.article h2::after {
   width: 84px;
   padding-top: 8px;
   content: "";
-  border-bottom: 2px solid #ffea00;
+  border-bottom: 2px solid var(--heading-highlight-color);
 }
 
 h2 { font-size: var(--heading-font-size-xl) }
@@ -189,7 +192,7 @@ button:disabled, button:disabled:hover {
 a.button.secondary, button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
-  color: var(--text-color)
+  color: unset;
 }
 
 body.activity main {
@@ -232,20 +235,12 @@ main pre {
 }
 
 main blockquote {
-  font-style: italic;
+  color: var(--blockquote-color);
+  background-color: var(--blockquote-background-color);
+  font-family: var(--heading-font-family);
   margin: 3rem;
   text-indent: -1rem;
   hanging-punctuation: first;
-}
-
-main blockquote p::before {
-  content: "“";
-  line-height: 0;
-}
-
-main blockquote p::after {
-  content: "”";
-  line-height: 0;
 }
 
 hr {
@@ -285,6 +280,20 @@ img {
 
 main .section.highlight {
   background-color: var(--highlight-background-color);
+  color: var(--highlight-text-color);
+}
+
+main .section.overlay {
+  background-color: var(--overlay-background-color);
+  color: var(--highlight-text-color);
+}
+
+main .section.full-bleed {
+  padding: 0;
+}
+
+main .section.full-bleed > div {
+  max-width: unset;
 }
 
 .icon-wknd-logo-dk {
