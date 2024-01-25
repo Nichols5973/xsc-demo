@@ -16,7 +16,7 @@
       "environments": [
         "edit"
       ],
-      "url": "/aem-asset-selector",
+      "url": "https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/franklin/asset-selector.html",",
       "isPalette": true,
       "paletteRect": "width:1000px; height:700px"
     }
