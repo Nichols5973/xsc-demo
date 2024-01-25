@@ -6,7 +6,7 @@
       "title": "Library",
       "environments": [ "edit" ],
       "isPalette": true,
-      "paletteRect": "top: auto; bottom: 200px; left: 200px; height: 900px; width: 900px;",
+      "paletteRect": "top: auto; bottom: 200px; left: 200px; height: 900px; width: 1200px;",
       "url": "https://main--xsc-wknd--hlxsites.hlx.page/tools/sidekick/library.html",
       "includePaths": [ "**.docx**" ]
     },
